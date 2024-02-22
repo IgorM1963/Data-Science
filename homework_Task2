@@ -8,3 +8,13 @@ for i in range(len(numbers)):
     reverse_numbers.append(numbers[-(i+1)])
 
 print (reverse_numbers)
+
+# Перебор списка с выводом чисел и их четности
+index = 0
+while index < len(reverse_numbers):
+    number = reverse_numbers[index]
+    if number % 2 == 0:
+        print(f"{number} - четное")
+    else:
+        print(f"{number} - нечетное")
+    index += 1
